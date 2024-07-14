@@ -45,7 +45,7 @@ function renderTareas() {
   for (let tarea of tareas) {
     let estado = tarea.estado;
     if (estado) {
-      html += `<li>${tarea.nombre} <input checked type="checkbox" onclick="update(${tarea.id})"}> <button onclick="borrar(${tarea.id})"> x </button></li>`;
+      html += `<li class="texto__tachado">${tarea.nombre} <input checked type="checkbox" onclick="update(${tarea.id})"}> <button onclick="borrar(${tarea.id})"> x </button></li>`;
     } else {
       html += `<li>${tarea.nombre} <input type="checkbox" onclick="update(${tarea.id})"}> <button onclick="borrar(${tarea.id})"> x </button></li>`;
     }
