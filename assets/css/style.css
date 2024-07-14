@@ -1,0 +1,4 @@
+.texto__tachado {
+  text-decoration: line-through;
+  color: #555;
+}
